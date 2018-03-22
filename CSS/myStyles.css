@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  background-color: #ECE9E9;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 16em;
+}
+
+@font-face {
+  font-family: WoodLook;
+  src: url(../Fonts/WoodLook.ttf);
+}
+
+#piramida {
+    text-align: center;
+    background-color: #A6B7C6;
+    border-bottom: 1px solid #3F6F95;
+    padding: 2em;
+}
+
+#piramida a {
+  font-family: WoodLook;
+  color: #825842;
+  text-decoration: none;
+  font-size: 3em;
+  text-shadow: 1px 1px #3F6F95;
+}
+
+p {
+  color: #243547;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1em;
+  padding: 1.6em;
+  text-align: justify;
+}
+
+#slike ul {
+  text-align: center;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+#slike ul li a {
+  color: #243547;
+  text-decoration: none;
+  color: white;
+  display:block;
+  width: 6.55em;
+  background-color: #3F6F95;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1em;
+  padding:0.6em;
+  margin: 1.4em auto 0em auto;
+  border: 0.15em outset #A6B7C6;
+}
+
+#trougao {
+  padding:1.6em;
+}
+
+#trougao img {
+  width: 100%;
+  max-width: 600px;
+}
+
+input {
+  width: 4em;
+}
+
+#ostar {
+  height:1.6em;
+}
+
+#tup {
+  height:1.6em;
+  display:none;
+}
+
+#footer {
+  background-color: #825842;
+  color: white;
+  border-top: 1px solid #243547;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding: 1.6em;
+  text-align: center;
+}
+
+#footer p {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+#footer img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 5em;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  [class*="col-"] {
+      float: left;
+      padding: 1.4em;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  #slike p {
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 1.4em;
+  }
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testic</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/myStyles.css">
+  <script type="text/javascript" src="./JS/myScript.js"></script>
+</head>
+
+<body>
+
+  <div id="piramida"><a href="index.html">PIRAMIDA</a></div>
+
+  <div class="row">
+    <div id="trougao" class="col-4">
+      <img src="./Images/trougao.png" alt="Trougao">
+    </div>
+
+    <div id="unos" class="col-8">
+      <p>Dužine iverica iznose
+        a=<input class="stranica" onchange="izracunajGama()" type="number" name="a" value="3000"> <i>mm</i> i
+        b=<input class="stranica" onchange="izracunajGama()" type="number" name="b" value="4000"> <i>mm</i>.
+        Rastojanje između njihovih krajeva iznosi
+        c=<input class="stranica" onchange="izracunajGama()" type="number" name="c" value="5000"> <i>mm</i>.
+      </p>
+    </div>
+
+    <div id="rezultat" class="col-8">
+      <p>Ugao koje iverice zahvataju iznosi &#8737;C=
+        <output name="gama">90</output>&#176;.
+        <span id="iverice">Iverice treba sjeći pod uglom od <output name="gamaSjecenja">0</output>&#176;
+        <img id="ostar" src="./Images/ostar.png">
+        <img id="tup" src="./Images/tup.png">.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="napomena" class="col-12">
+      <p><i>U slučaju da unesene brojčane vrijednosti ne mogu biti mjerni brojevi stranica trougla, vidjećete da ugao umjesto brojčane vrijednosti ima vrijednost NaN (Not-A-Number).</i></p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <a href="index.html"><img src="./Images/icon.png" alt="logo"></a>
+    <p>&copy; 2018 Siniša Bubonja. Sva prava zadržana.</p>
+  </div>
+
+</body>
+
+</html>
