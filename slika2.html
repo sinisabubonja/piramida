@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testic</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/myStyles.css">
+  <script type="text/javascript" src="./JS/myScript.js"></script>
+</head>
+
+<body>
+
+  <div id="piramida"><a href="index.html">PIRAMIDA</a></div>
+
+  <div class="row">
+    <div id="trapez" class="col-8">
+      <img id="slika2" src="./Images/slika21.png" alt="Figura">
+    </div>
+
+    <div class="col-4">
+      <p>Unesite dužine sa slike:<br><br>
+      AH = <input onchange="izracunaj()" type="number" name="ah" value="800"> <i>mm;</i><br>
+      HF = JK = <input onchange="izracunaj()" type="number" name="hf" value="800"> <i>mm;</i><br>
+      FB = <input onchange="izracunaj()" type="number" name="fb" value="800"> <i>mm;</i><br>
+      ED = <input onchange="izracunaj()" type="number" name="ed" value="600"> <i>mm;</i><br>
+      AE = <input onchange="izracunaj()" type="number" name="ae" value="2000"> <i>mm;</i><br>
+      BC = <input onchange="izracunaj()" type="number" name="bc" value="800"> <i>mm;</i><br>
+      HJ = FK = <input onchange="izracunaj()" type="number" name="hj" value="600"> <i>mm;</i><br>
+      JL = <input onchange="izracunaj()" type="number" name="jl" value="400"> <i>mm,</i><br>
+      LK = <output name="lk">400</output> <i>mm.</i><br><br>
+
+      Dupla iverica:<br><br>
+      <input type="checkbox" name="hi2d" onclick="izracunaj()">
+      <span>HI</span><br>
+      <input type="checkbox" name="fg2d" onclick="izracunaj()">
+      FG
+    </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <p>Debljina iverice iznosi <input onchange="izracunaj()" type="number" name="d" value="18"> <i>mm.</i> Visina parapena iznosi <input onchange="izracunaj()" type="number" name="p" value="0"> <i>mm</i> (unesite brojčanu vrijednost "0" ako nema parapena).
+      </p>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>
+          Ivericu DC &#8776; <output name="dc">2163.33 &#8776; 229.55 + 1 * 21.63 (iverica) + 459.11 + 21.63 (iverica) + 459.11 + 1 * 21.63 (iverica) + 929.03 + 21.63 (iverica)</output> <i>mm</i> treba sjeći pod uglovima <output name="alfaPola">16.85</output>&#176; i <output name="alfa">33.69</output>&#176;.<br>
+          AB = <output name="ab">2400.00 = 18 (iverica) + 773.00 + 1 * 18 (iverica) + 782.00 + 1 * 18 (iverica) + 773.00 + 18 (iverica)</output> <i>mm</i>.<br>
+          Iverice HI &#8776; <output name="hi">1833.03 &#8776; 573.00 + 18 (iverica) + 1242.03</output> <i>mm</i>, FG &#8776; <output name="fg">1299.70 &#8776; 573.00 + 18 (iverica) + 708.70</output> <i>mm</i> i LM &#8776; <output name="lm">975.37</output> <i>mm</i> treba sjeći pod uglom <output name="alfa">33.69</output>&#176;.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>Ako želite postaviti vrata na nekom od trapezoidnih oblika, horizontalnu dimenziju trapeza umanjite za <input onchange="izracunaj()" type="number" name="d1" value="5"> <i>mm</i> a vertikalnu dimenziju umanjite za <output name="d2">5.50</output> <i>mm</i>.</p>
+      </div>
+    </div>
+
+  <div class="row">
+    <div id="napomena" class="col-12">
+      <p><i>U slučaju da nisu unesene brojčane vrijednosti ili se na osnovu unesenih brojčanih vrijednosti ne mogu izračunati neke veličine, vidjećete da te veličine umjesto brojčanih vrijednosti imaju vrijednost NaN (Not-A-Number).</i></p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <a href="index.html"><img src="./Images/icon.png" alt="logo"></a>
+    <p>&copy; 2018 Siniša Bubonja. Sva prava zadržana.</p>
+  </div>
+
+</body>
+
+</html>

@@ -153,3 +153,12 @@ input {
   }
 
 }
+
+#trapez {
+  padding:1.6em;
+}
+
+#trapez img {
+  width: 100%;
+  max-width: 600px;
+}
